@@ -1,0 +1,109 @@
+//** --------------------------------------------------------------------------------------------------- Slate Variables
+//noinspection CssUnknownTarget
+@import "ember-cli-font-awesome-sass";
+//** --------------------------------------------------------------------------------------------------- Slate Variables
+@import '../../bower_components/bootswatch/slate/variables';
+
+//** ----------------------------------------------------------------------------------------- Override Slate Background
+
+//** Background color for `<body>`.
+$body-bg: #fff;
+//** Global text color on `<body>`.
+$text-color: #3F3F3F;
+//** Global textual link color.
+$link-color: $brand-info;
+//** Link hover color set via `darken()` function.
+$link-hover-color: darken($link-color, 10%);
+//** Bring in the Open Sans font from Google fonts
+// TODO: consider Oswald font?
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-sans-serif;
+
+//** ------------------------------------------------------------------------------------ Override Slate Navbar Rounding
+
+$navbar-border-radius: 0;
+$navbar-default-bg: #252528;
+
+//** ------------------------------------------------------------------------------------------------------- Bootstrap 3
+
+//noinspection CssUnknownTarget
+@import 'ember-cli-bootstrap3-sass';
+
+//** --------------------------------------------------------------------------------------------------- Slate Bootstrap
+
+@import '../../bower_components/bootswatch/slate/bootswatch';
+
+//** ------------------------------------------------------------------------------------- Override Slate Heading Shadow
+
+$web-font-path: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700";
+
+//** ------------------------------------------------------------------------------------- Override Slate Heading Shadow
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: none;
+}
+
+//** -------------------------------------------------------------------------------------------------------- Background
+
+.row {
+  &.row-margin-bottom {
+    margin-bottom: 60px;
+  }
+  &.row-margin-top {
+    margin-top: 60px;
+  }
+}
+
+.bg-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin-top: -21px;
+  padding-top: 20px;
+  &.bg-image-linking-entities {
+    background-image: url('/assets/images-preview/stock-photo-linking-entities-network-networking-social-media-internet-communication-abstract-web-of-wires-386834047.jpg');
+  }
+  &.bg-image-clouds {
+    background-image: url('/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg');
+  }
+  &.bg-image-road-concept {
+    background-image: url('/assets/images-preview/stock-photo-road-concept-improvement-576685078.jpg');
+  }
+  * {
+    @include opacity(0.95);
+  }
+}
+
+.bg-alternate {
+  background-color: #f7f7f7;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
+}
+
+.bg-slate {
+  background-color: $navbar-default-bg;
+  color: $navbar-default-color;
+  hr {
+    border-color: $gray;
+  }
+}
+
+.section-header {
+  color: #646464;
+  font-weight: 300 !important;
+  font-style: italic;
+  //border-bottom: 1px solid #b3b3b3;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.hero-heading {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+a.fa-no-text-decoration {
+  text-decoration: none;
+}
