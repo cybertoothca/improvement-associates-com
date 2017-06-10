@@ -69,7 +69,10 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg');
   }
   &.bg-image-road-concept {
+    margin: 0;
     background-image: url('/assets/images-preview/stock-photo-road-concept-improvement-576685078.jpg');
+    height: 400px;
+    background-position: center bottom;
   }
   * {
     @include opacity(0.95);
