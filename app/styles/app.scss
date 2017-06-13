@@ -2,7 +2,7 @@
 //noinspection CssUnknownTarget
 @import "ember-cli-font-awesome-sass";
 //** --------------------------------------------------------------------------------------------------- Slate Variables
-@import '../../bower_components/bootswatch/slate/variables';
+@import "../../bower_components/bootswatch/slate/variables";
 
 //** ----------------------------------------------------------------------------------------- Override Slate Background
 
@@ -28,11 +28,15 @@ $navbar-default-bg: #252528;
 //** ------------------------------------------------------------------------------------------------------- Bootstrap 3
 
 //noinspection CssUnknownTarget
-@import 'ember-cli-bootstrap3-sass';
+@import "ember-cli-bootstrap3-sass";
+
+//** ------------------------------------------------------------------------------------------------------ Social Media
+
+@import "social_media";
 
 //** --------------------------------------------------------------------------------------------------- Slate Bootstrap
 
-@import '../../bower_components/bootswatch/slate/bootswatch';
+@import "../../bower_components/bootswatch/slate/bootswatch";
 
 //** ------------------------------------------------------------------------------------- Override Slate Heading Shadow
 
@@ -69,14 +73,14 @@ body {
   margin-top: -21px;
   padding-top: 20px;
   &.bg-image-linking-entities {
-    background-image: url('/assets/images-preview/stock-photo-linking-entities-network-networking-social-media-internet-communication-abstract-web-of-wires-386834047.jpg');
+    background-image: url("/assets/images-preview/stock-photo-linking-entities-network-networking-social-media-internet-communication-abstract-web-of-wires-386834047.jpg");
   }
   &.bg-image-clouds {
-    background-image: url('/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg');
+    background-image: url("/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg");
   }
   &.bg-image-road-concept {
     margin: 0;
-    background-image: url('/assets/images-preview/stock-photo-road-concept-improvement-576685078.jpg');
+    background-image: url("/assets/images-preview/stock-photo-road-concept-improvement-576685078.jpg");
     height: 400px;
     background-position: center bottom;
   }
