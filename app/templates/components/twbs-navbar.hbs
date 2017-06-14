@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#js-navbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    {{#link-to "index" class="navbar-brand"}}IA Logo{{/link-to}}
+  </div>
+
+  <div class="collapse navbar-collapse" id="js-navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        {{#link-to "about-us"}}About Us{{/link-to}}
+      </li>
+      <li>
+        {{#link-to "contact-us"}}Contact Us{{/link-to}}
+      </li>
+      <li>
+        {{#link-to "services"}}Services{{/link-to}}
+      </li>
+      <li>
+        {{#link-to "methods"}}Methods{{/link-to}}
+      </li>
+    </ul>
+  </div>
+</div>
