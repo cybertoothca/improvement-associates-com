@@ -72,8 +72,9 @@ body {
   height: 600px;
   margin-top: -21px;
   padding-top: 20px;
+  &,
   &.bg-image-linking-entities {
-    background-image: url("/assets/images-preview/stock-photo-linking-entities-network-networking-social-media-internet-communication-abstract-web-of-wires-386834047.jpg");
+    background-image: url("/assets/images/shutterstock_384581020.jpg");
   }
   &.bg-image-clouds {
     background-image: url("/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg");
