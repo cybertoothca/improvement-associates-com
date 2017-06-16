@@ -1,8 +1,8 @@
 //** --------------------------------------------------------------------------------------------------- Slate Variables
 //noinspection CssUnknownTarget
-@import "ember-cli-font-awesome-sass";
+@import 'ember-cli-font-awesome-sass';
 //** --------------------------------------------------------------------------------------------------- Slate Variables
-@import "../../bower_components/bootswatch/slate/variables";
+@import '../../bower_components/bootswatch/slate/variables';
 
 //** ----------------------------------------------------------------------------------------- Override Slate Background
 
@@ -14,11 +14,12 @@ $text-color: #3F3F3F;
 $link-color: $brand-info;
 //** Link hover color set via `darken()` function.
 $link-hover-color: darken($link-color, 10%);
-//** Bring in the Open Sans font from Google fonts
-// TODO: consider Oswald font?
-$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//** Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Open+Sans:300,300i,400,400i,700,700i');
+//** Font Overrides
+$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
-$headings-font-family: $font-family-sans-serif;
+$headings-font-family: 'Noto Serif', $font-family-sans-serif;
 
 //** ------------------------------------------------------------------------------------ Override Slate Navbar Rounding
 
@@ -28,19 +29,15 @@ $navbar-default-bg: #252528;
 //** ------------------------------------------------------------------------------------------------------- Bootstrap 3
 
 //noinspection CssUnknownTarget
-@import "ember-cli-bootstrap3-sass";
+@import 'ember-cli-bootstrap3-sass';
 
 //** ------------------------------------------------------------------------------------------------------ Social Media
 
-@import "social_media";
+@import 'social_media';
 
 //** --------------------------------------------------------------------------------------------------- Slate Bootstrap
 
-@import "../../bower_components/bootswatch/slate/bootswatch";
-
-//** ------------------------------------------------------------------------------------- Override Slate Heading Shadow
-
-$web-font-path: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700";
+@import '../../bower_components/bootswatch/slate/bootswatch';
 
 //** ------------------------------------------------------------------------------------- Override Slate Heading Shadow
 
@@ -52,6 +49,12 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   padding-top: 70px;
+}
+
+//** -------------------------------------------------------------------------------------- Navbar Brand Font Is Heading
+
+a.navbar-brand {
+  font-family: $headings-font-family;
 }
 
 //** -------------------------------------------------------------------------------------------------------- Background
@@ -74,14 +77,14 @@ body {
   padding-top: 20px;
   &,
   &.bg-image-linking-entities {
-    background-image: url("/assets/images/shutterstock_384581020.jpg");
+    background-image: url('/assets/images/shutterstock_384581020.jpg');
   }
   &.bg-image-clouds {
-    background-image: url("/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg");
+    background-image: url('/assets/images-preview/stock-photo-blue-sky-with-cloud-338259794.jpg');
   }
   &.bg-image-road-concept {
     margin: 0;
-    background-image: url("/assets/images-preview/stock-photo-road-concept-improvement-576685078.jpg");
+    background-image: url('/assets/images/shutterstock_576685078.jpg');
     height: 400px;
     background-position: center bottom;
   }
@@ -114,8 +117,9 @@ body {
 }
 
 .hero-heading {
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  //color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px #fff;
 }
 
 a.fa-no-text-decoration {
