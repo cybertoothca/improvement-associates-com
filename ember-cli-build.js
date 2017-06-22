@@ -3,7 +3,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    fingerprint: {
+      extensions: ['js', 'css', 'png', 'jpg', 'gif', 'svg', 'pdf'],
+      prepend: '//dujri8r85bns6.cloudfront.net/'
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
