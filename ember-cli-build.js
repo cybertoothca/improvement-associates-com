@@ -1,11 +1,11 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   var app = new EmberApp(defaults, {
     fingerprint: {
       extensions: ['js', 'css', 'png', 'jpg', 'gif', 'svg', 'pdf'],
-      prepend: '//dujri8r85bns6.cloudfront.net/'
+      prepend: '//d3kqfrzeqv2rfq.cloudfront.net/'
     }
   });
 

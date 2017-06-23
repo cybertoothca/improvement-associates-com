@@ -1,13 +1,18 @@
 /* jshint node: true */
 
-module.exports = function(deployTarget) {
+module.exports = function (deployTarget) {
   var ENV = {
     build: {
       environment: 'production'
     },
     s3: {
+      bucket: 'cdn.improvementassociates.com',
+      filePattern: '**/*.{js,css,png,gif,ico,jpg,jpg-c200,map,xml,txt,svg,swf,eot,ttf,woff,woff2,otf}',
+      profile: 'improvementassociates',
+      region: 'ca-central-1'
+    },
+    's3-index': {
       bucket: 'staging.improvementassociates.com',
-      filePattern: '**/*.{js,css,png,gif,ico,jpg,jpg-c200,map,xml,txt,svg,swf,eot,ttf,woff,woff2,otf,html}',
       profile: 'improvementassociates',
       region: 'ca-central-1'
     }
