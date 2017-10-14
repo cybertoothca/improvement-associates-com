@@ -1,7 +1,7 @@
-/* jshint node: true */
+/* eslint-env node */
 
 module.exports = function (deployTarget) {
-  var ENV = {
+  let ENV = {
     build: {
       environment: 'production'
     },
@@ -18,7 +18,6 @@ module.exports = function (deployTarget) {
     }
     // include other plugin configuration that applies to all deploy targets here
   };
-
 
   // if (deployTarget === 'production') {
   //   ENV.build.environment = 'production';
