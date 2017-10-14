@@ -1,7 +1,7 @@
 /* eslint-env node */
 
-module.exports = function (deployTarget) {
-  let ENV = {
+module.exports = function (/*deployTarget*/) {
+  var ENV = {
     build: {
       environment: 'production'
     },
