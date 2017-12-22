@@ -29,7 +29,7 @@
     "ember-cli-deploy-gzip": "^1.0.1",
     "ember-cli-deploy-revision-data": "^1.0.0",
     "ember-cli-deploy-s3": "^1.1.0",
-    "ember-cli-deploy-s3-index": "^1.0.0",
+    "ember-cli-deploy-s3-index": "git://github.com/cybertoothca/ember-cli-deploy-s3-index.git",
     "ember-cli-document-title": "^0.3.3",
     "ember-cli-eslint": "^4.0.0",
     "ember-cli-font-awesome-sass": "^1.0.4",

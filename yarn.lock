@@ -2330,9 +2330,9 @@ ember-cli-deploy-revision-data@^1.0.0:
     rsvp "^3.5.0"
     simple-git "^1.57.0"
 
-ember-cli-deploy-s3-index@^1.0.0:
+"ember-cli-deploy-s3-index@git://github.com/cybertoothca/ember-cli-deploy-s3-index.git":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-deploy-s3-index/-/ember-cli-deploy-s3-index-1.0.0.tgz#9353b459d794962916b6075494138cdb87ceee36"
+  resolved "git://github.com/cybertoothca/ember-cli-deploy-s3-index.git#319fbbde407ad60072a902c83c802518f931dc88"
   dependencies:
     aws-sdk "^2.1.48"
     core-object "^2.0.6"
