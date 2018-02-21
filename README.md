@@ -41,7 +41,23 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+#### Staging Environment
+
+```
+$ eb deploy staging
+```
+
+Then sign into AWS S3 to change the `staging.improvementassociates.com`
+bucket's index.html page in the website hosting section.
+
+#### Staging Environment
+
+```
+$ eb deploy production
+```
+
+Then sign into AWS S3 to change the `improvementassociates.com`
+bucket's index.html page in the website hosting section.
 
 ## Further Reading / Useful Links
 
