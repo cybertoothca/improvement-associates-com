@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "[handlebars]": {
+      "editor.defaultFormatter": "AdamBaker.vsc-prettier-glimmer"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [120],
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 120
+  }
+}
