@@ -1,4 +1,4 @@
-# ia
+# Improvement Associates
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -7,23 +7,23 @@ A short introduction of this app could easily go here.
 
 You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Ember CLI](https://ember-cli.com/)
+- [Google Chrome](https://google.com/chrome/)
 
 ## Installation
 
-* `git clone git@github.com:cybertoothca/improvement-associates-com.git` this repository
-* `cd ia`
-* `yarn install`
+- `git clone git@github.com:cybertoothca/improvement-associates-com.git` this repository
+- `cd ia`
+- `yarn install`
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+- `ember serve`
+- Visit your app at [http://localhost:4200](http://localhost:4200).
+- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
 ### Code Generators
 
@@ -31,20 +31,20 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+- `ember test`
+- `ember test --server`
 
 ### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+- `ember build` (development)
+- `ember build --environment production` (production)
 
 ### Deploying
 
 #### Staging Environment
 
 ```
-$ eb deploy staging
+$ yarn deploy-staging
 ```
 
 Then sign into AWS S3 to change the `staging.improvementassociates.com`
@@ -53,7 +53,7 @@ bucket's index.html page in the website hosting section.
 #### Staging Environment
 
 ```
-$ eb deploy production
+$ yarn deploy-production
 ```
 
 Then sign into AWS S3 to change the `improvementassociates.com`
@@ -61,8 +61,8 @@ bucket's index.html page in the website hosting section.
 
 ## Further Reading / Useful Links
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+- [ember.js](https://emberjs.com/)
+- [ember-cli](https://ember-cli.com/)
+- Development Browser Extensions
+  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)

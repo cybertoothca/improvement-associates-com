@@ -5,6 +5,9 @@ module.exports = function (deployTarget) {
     build: {
       environment: "production",
     },
+    pipeline: {
+      activateOnDeploy: true,
+    },
     s3: {
       bucket: "cdn.improvementassociates.com",
       filePattern:
